@@ -34,7 +34,7 @@ SleepTimer::~SleepTimer() {
 void SleepTimer::SetEnabled(bool enabled) {
     if (enabled && !enabled_) {
         Settings settings("wifi", false);
-        if (!settings.GetBool("sleep_mode", true)) {
+        if (!settings.GetBool("sleep_mode", false)) {
             ESP_LOGI(TAG, "Power save timer is disabled by settings");
             return;
         }

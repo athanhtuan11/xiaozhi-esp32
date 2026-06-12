@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -s \"https://raw.githubusercontent.com/xinnan-tech/xiaozhi-esp32-server/main/docs/LLM.md\")",
+      "Bash(curl -s \"https://raw.githubusercontent.com/xinnan-tech/xiaozhi-esp32-server/main/config/config.example.yaml\")",
+      "Bash(curl -s -L \"https://raw.githubusercontent.com/xinnan-tech/xiaozhi-esp32-server/main/docs/LLM.md\")",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "WebFetch(domain:github.com)"
+    ]
+  }
+}
