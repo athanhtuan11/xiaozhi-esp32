@@ -212,6 +212,7 @@ std::string WebsocketProtocol::GetHelloMessage() {
     cJSON_AddBoolToObject(features, "mcp", true);
     cJSON_AddItemToObject(root, "features", features);
     cJSON_AddStringToObject(root, "transport", "websocket");
+    cJSON_AddStringToObject(root, "language", Lang::CODE);
     cJSON* audio_params = cJSON_CreateObject();
     cJSON_AddStringToObject(audio_params, "format", "opus");
     cJSON_AddNumberToObject(audio_params, "sample_rate", 16000);
