@@ -104,10 +104,11 @@ dependencies:
     version: '*'
     rules:
     - if: target in [esp32p4]
-  espfriends/servo_dog_ctrl:
-    version: ^0.1.8
-    rules:
-    - if: target in [esp32c3]
+  # espfriends/servo_dog_ctrl: only needed for ESP-HI robot dog board
+  # espfriends/servo_dog_ctrl:
+  #   version: ^0.1.8
+  #   rules:
+  #   - if: target in [esp32c3]
 
   llgok/cpp_bus_driver:
     version: 1.1.0
